@@ -1,5 +1,7 @@
 h1 {
-
+    text-align: center;
+    padding: 50px;
+    color: white;
 }
 
 img {
@@ -42,4 +44,60 @@ img {
   100% {
     margin-left: 200px;
   }
+}
+
+.bubble1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.findingnemo {
+    width: 30px;
+    height: 30px;
+    /* background-color: #fca311; */
+    border-radius: 100%;
+    left: 50%
+    animation-name: nemo;
+}
+
+@keyframes nemo {
+
 }
