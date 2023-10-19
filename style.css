@@ -1,9 +1,26 @@
-
+body {
+  font-family: 'Tilt Neon', sans-serif;
+}
 
 h1 {
     text-align: center;
     padding: 50px;
     color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+h1::first-letter {
+  color: black;
+  border: 2px solid black;
+  border-radius: 20%;
+  padding: 1px 5px;
+  text-shadow: 1px 1px 5px whitesmoke;
+  box-shadow: 1px 1px 5px whitesmoke;
+  margin-right: 5px;
+}
+
+::selection {
+  color: red;
 }
 
 img {
@@ -18,18 +35,18 @@ img {
 }
 
 .bubble {
-   width: 30px;
+  width: 30px;
   height: 30px;
   border-radius: 100%;
   position: absolute;
   background-color: #f1faee; 
-    bottom: -30px;
+  bottom: -30px;
   /* opacity: 0.2; */
   animation: bubble 15s ease-in-out infinite,
     sideWays 4s ease-in-out infinite alternate;
 }
 
-@keyframes bubble {
+/* @keyframes bubble {
   0% {
     transform: translateY(0%);
     opacity: 0.06;
@@ -46,7 +63,7 @@ img {
   100% {
     margin-left: 200px;
   }
-}
+} */
 
 .bubble1 {
   left: 10%;
@@ -94,11 +111,39 @@ img {
 .findingnemo {
     width: 30px;
     height: 30px;
-    /* background-color: #fca311; */
+    background-color: #fca311;
     border-radius: 100%;
-    left: 50%
+    left: 50%;
+    animation: nemo 15s infinite,
+      upDown 4s ease-in-out infinite;
 }
 
 @keyframes nemo {
-
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
 }
+
+@keyframes upDown {
+  0% {
+    margin-top: 40vh;
+  }
+  20% {
+    margin-bottom: 80vh;
+  }
+  40% {
+    margin-top: 20vh;
+  }
+  60% {
+    margin-bottom: 60vh;
+  }
+  80% {
+    margin-top: 10vh;
+  }
+  100% {
+    margin-bottom: 40vh;
+  }
+} 
