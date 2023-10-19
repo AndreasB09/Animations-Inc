@@ -6,7 +6,7 @@ h1 {
     text-align: center;
     padding: 50px;
     color: white;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 0px 0px 5px black;
 }
 
 h1::first-letter {
@@ -41,12 +41,11 @@ img {
   position: absolute;
   background-color: #f1faee; 
   bottom: -30px;
-  /* opacity: 0.2; */
   animation: bubble 15s ease-in-out infinite,
     sideWays 4s ease-in-out infinite alternate;
 }
 
-/* @keyframes bubble {
+@keyframes bubble {
   0% {
     transform: translateY(0%);
     opacity: 0.06;
@@ -63,7 +62,7 @@ img {
   100% {
     margin-left: 200px;
   }
-} */
+}
 
 .bubble1 {
   left: 10%;
@@ -109,30 +108,41 @@ img {
 }
 
 .findingnemo {
-    width: 25px;
-    height: 25px;
-    background-color: #fca311;
-    border-radius: 100%;
-    animation: nemo 15s ease-in-out infinite,
-      upDown 5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 200px;
+    animation: leftRight 3s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
     
 }
 
-@keyframes nemo {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(120vh);
+.findingnemo::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #fca311;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    animation: upDown 3s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+@keyframes leftRight {
+  50% {
+    animation-timing-function: (0.3, 0.27, 0.07, 1.64);
+    transform: translateX(200px);
   }
 }
 
 @keyframes upDown {
-  0% {
-    margin-top: 0px;
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-120px);
   }
+}
 
-  100% {
-    margin-top: 100px;
-  }
-} 
+.seagrass {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77vh;
+}
