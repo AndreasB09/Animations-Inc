@@ -30,7 +30,7 @@ img {
 
 .ocean {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-image: linear-gradient(0deg, #1d3557, #457b9d)
 }
 
@@ -109,41 +109,30 @@ img {
 }
 
 .findingnemo {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: #fca311;
     border-radius: 100%;
-    left: 50%;
-    animation: nemo 15s infinite,
-      upDown 4s ease-in-out infinite;
+    animation: nemo 15s ease-in-out infinite,
+      upDown 5s ease-in-out infinite;
+    
 }
 
 @keyframes nemo {
   0% {
-    transform: translateX(0vw);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(120vw);
+    transform: translateX(120vh);
   }
 }
 
 @keyframes upDown {
   0% {
-    margin-top: 40vh;
+    margin-top: 0px;
   }
-  20% {
-    margin-bottom: 80vh;
-  }
-  40% {
-    margin-top: 20vh;
-  }
-  60% {
-    margin-bottom: 60vh;
-  }
-  80% {
-    margin-top: 10vh;
-  }
+
   100% {
-    margin-bottom: 40vh;
+    margin-top: 100px;
   }
 } 
