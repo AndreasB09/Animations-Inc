@@ -31,7 +31,9 @@ img {
 .ocean {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(0deg, #1d3557, #457b9d)
+    background-image: linear-gradient(0deg, #1d3557, #457b9d);
+    margin-top: auto;
+    
 }
 
 .bubble {
@@ -144,9 +146,11 @@ img {
 .seagrass {
   display: flex;
   justify-content: space-between;
-  align-items: end;
-  margin-top: 10px;
+  height: 65%;
+  align-items: flex-end;
 }
+
+
 
 a {
   text-decoration: none;
