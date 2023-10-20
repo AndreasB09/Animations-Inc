@@ -1,0 +1,102 @@
+@font-face {
+    font-family: matrix;
+    src: url(matrix.ttf);
+  }
+
+body {
+    font-family: matrix;
+    background-color: black;
+}
+
+h3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #70e000;
+    text-shadow: 0 0 5px #ccff33;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+
+.matrix {
+    height: 200px;
+    width: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rows {
+    animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+    from {
+      transform: translateY(-250%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+}
+
+.row1 {
+  animation-delay: 0.2s;
+  animation-duration: 1.5s;
+}
+
+.row2 {
+  animation-delay: 0.2s;
+  animation-duration: 2s;
+}
+
+.row3 {
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+}
+
+.row4 {
+  animation-delay: 0.2s;
+  animation-duration: 2.5s;
+}
+
+.row5 {
+  animation-delay: 0.2s;
+  animation-duration: 1.2s;
+}
+
+.row6 {
+  animation-delay: 0.2s;
+  animation-duration: 2.1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+h1::first-letter {
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 20%;
+  padding: 1px 5px;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
+  margin-right: 5px;
+  font-size: 50px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+::selection {
+  color: red;
+}
