@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
 body {
   font-family: 'Tilt Neon', sans-serif;
+  overflow: hidden;
 }
 
 h1 {
